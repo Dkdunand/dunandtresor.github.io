@@ -22,3 +22,9 @@ section {
     border: 2px solid #ddd;
     object-fit: cover;
 }
+.logo {
+    width: 120px; /* Largeur du logo */
+    height: auto; /* Garde les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    border: 2px solid #ddd; /* Bordure grise fine */
+}
