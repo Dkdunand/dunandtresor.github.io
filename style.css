@@ -1,23 +1,90 @@
+/* Réinitialisation basique */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  display: flex; /* permet un affichage côte à côte du aside et main */
+  background-color: #f4f4f4;
+  color: #333;
 }
-header {
-    background-color: #007acc;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
+
+/* Barre latérale */
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
 }
-section {
-    margin: 20px auto;
-    width: 80%;
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-.profil-pic {
-    width: 150px;
-    height: 150px;
+
+.sidebar h1 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.title-job {
+  font-style: italic;
+  color: #666;
+}
+
+.location {
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+/* Liens de la barre latérale */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Contenu principal */
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.main-content h2 {
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.main-content a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.main-content a:hover {
+  text-decoration: underline;
+}
+
     border-radius: 50%;
     border: 2px solid #ddd;
     object-fit: cover;
