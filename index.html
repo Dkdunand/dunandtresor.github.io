@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-     <img src="profil.jpg" alt="Photo de profil" class="profil-pic">
-
-<style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { color: blue; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Site Personnel</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     <header>
-        <!-- Insérer le logo -->
-        <img src="logo.png" alt="Logo" class="logo">
-        <!-- Menu de navigation -->
-      
-    </header>
-    <h1>Bienvenue sur mon portfolio</h1>
+
+  <!-- Barre latérale (photo + menu) -->
+  <aside class="sidebar">
+    <div class="profile-picture">
+      <img src="images/profil.jpg" alt="Photo de profil">
+    </div>
+    <h1>Votre Nom</h1>
+    <p class="title-job">PhD Student / Ingénieur / etc.</p>
+    <p class="location">Paris, France</p>
+    
+    <nav class="nav-links">
+      <a href="https://github.com/votre-identifiant-github" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/votre-identifiant" target="_blank">LinkedIn</a>
+      <a href="mailto:votre.email@exemple.com">Email</a>
+      <!-- Ajoutez d’autres liens si nécessaire -->
+    </nav>
+  </aside>
+
+  <!-- Contenu principal -->
+  <main class="main-content">
+    <h2>Bienvenue sur mon site personnel&nbsp;!</h2>
+    <p>
+      Je suis un(e) <strong>ingénieur</strong> / <strong>doctorant(e)</strong> / autre, 
+      avec une formation en … (physique, environnement, etc.). 
+      Je travaille actuellement sur … (votre thématique de recherche ou d’expertise).
+    </p>
+
+    <p>
+      Mon parcours m’a mené à … (quelques lignes sur vos études/expériences). 
+      Vous pouvez en découvrir davantage sur mon <a href="CV.pdf" target="_blank">CV</a>.
+    </p>
+
+    <h3>Mes recherches / projets</h3>
+    <p>
+      Ma thèse / mon travail de recherche concerne … 
+      (expliquez votre sujet, vos axes, vos collaborations, etc.).
+    </p>
+    
+    <h3>Autres activités</h3>
+    <p>
+      Je suis également impliqué(e) dans … (associations, enseignement, évènements, etc.).
+    </p>
+
+    <h3>Contact</h3>
+    <p>
+      N’hésitez pas à me contacter pour en discuter&nbsp;!
+    </p>
+  </main>
   
-    <p>Je suis DJAKAI KOULEME DUNAND TRESOR, étudiant  à l'ENSAE Paris où j'ai la chance de poursuivre ma passion pour les mathématiques appliquées.</p>
-    <ul>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Après avoir obtenu mon baccalauréat scientifique (série C : Mathématiques et Sciences Physiques) en 2021 au Cameroun, j’ai intégré la Faculté des Sciences de l’Université de Douala. Pendant trois années intenses, j’ai exploré les mathématiques à travers une Licence (L1, L2, L3) qui a solidifié mes bases théoriques et pratiques dans cette discipline fascinante. Mon admission à l'ENSAE via le recrutement IP Paris du concours FUI (Filières Universitaires Internationales) représente pour moi une étape majeure. Depuis mon lycée, ma fascination pour les mathématiques ne cesse de grandir. Elles ne sont pas seulement une matière académique à mes yeux, mais un outil puissant pour comprendre et modéliser le monde. Cette passion m’a naturellement conduit à chercher une formation qui conjugue rigueur académique et application pratique des mathématiques, un domaine dans lequel l'ENSAE excelle.</p>
-    </section>
-    <section id="projects">
-        <h2>Projets</h2>
-        <p>Aujourd'hui, mes intérêts se concentrent particulièrement sur l’actuariat et la data science, deux disciplines qui mobilisent des outils mathématiques avancés et complémentaires. Mon objectif est d’explorer ces domaines de recherche pour mieux comprendre leurs méthodologies et leurs applications dans des secteurs stratégiques. Je suis convaincu que l’ENSAE, par la qualité de ses enseignements et de son environnement, me permettra de m’orienter avec clarté et ambition.
-</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : dunandtresor.djakaikouleme@ensae.fr
-        Tel : (+33) 7 45 65 32 15
-        </p>
-    </section>
 </body>
 </html>
+
