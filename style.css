@@ -1,97 +1,125 @@
-/* Réinitialisation basique */
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  display: flex; /* permet un affichage côte à côte du aside et main */
-  background-color: #f4f4f4;
+  display: flex;
+  background-color: #F4F4F9;
   color: #333;
+  min-height: 100vh;
 }
 
-/* Barre latérale */
+/* Sidebar */
 .sidebar {
   width: 260px;
-  background-color: #ffffff;
-  border-right: 1px solid #ccc;
+  background-color: #1B2A41;
+  color: #fff;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .profile-picture img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
+  border: 3px solid #3A506B;
+  object-fit: cover;
   margin-bottom: 10px;
 }
 
 .sidebar h1 {
   font-size: 1.5em;
-  margin: 10px 0;
+  font-weight: 600;
 }
 
 .title-job {
   font-style: italic;
-  color: #666;
+  font-size: 0.9em;
+  color: #ccc;
 }
 
 .location {
-  font-size: 0.9em;
-  color: #999;
-  margin-bottom: 20px;
+  font-size: 0.85em;
+  color: #bbb;
 }
 
-/* Liens de la barre latérale */
 .nav-links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #0066cc;
+  color: #4CAF50;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #fff;
 }
 
-/* Contenu principal */
+/* Main content */
 .main-content {
   flex: 1;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.main-content h2 {
-  margin-bottom: 20px;
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
 }
 
-.main-content p {
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  color: #1B2A41;
   margin-bottom: 15px;
-  line-height: 1.6;
 }
 
-.main-content a {
-  color: #0066cc;
+.card a {
+  color: #3A506B;
   text-decoration: none;
+  font-weight: 500;
 }
 
-.main-content a:hover {
-  text-decoration: underline;
+.card a:hover {
+  color: #4CAF50;
 }
 
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    object-fit: cover;
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .profile-picture img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-content {
+    padding: 20px;
+  }
 }
-.logo {
-    width: 120px; /* Largeur du logo */
-    height: auto; /* Garde les proportions */
-    border-radius: 8px; /* Coins arrondis */
-    border: 2px solid #ddd; /* Bordure grise fine */
-}
+
